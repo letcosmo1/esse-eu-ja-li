@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e980253398.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/livro.css">
+    <title>Livro</title>
+</head>
+<body>
+    <header>
+        <h1>ESSE EU JÁ LI</h1>
+        <nav class="links">
+            <a href="ranking.html"><i class="fa-solid fa-globe"></i></a>
+            <a href="pontuacao.html"><i class="fa-solid fa-user"></i></a>
+            <button class="logout-button">Logout</button>
+        </nav>
+    </header>
+
+    <a href="home.html" class="go-back"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <main>
+        <img src="../img/loader.gif" class="info-loader" alt="loading wheel">
+        
+        <div class="livro-container" style="display: none;">
+            <h2 class="titulo">Título do Livro</h2>
+            <p class="ano">Ano de publicação</p>
+
+            <hr>
+
+            <h3 class="sinopse-titulo">Sinopse: </h3>
+            <p class="sinopse">
+                Cras leo elit, congue at libero non, ultricies scelerisque nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas ut orci suscipit, tincidunt quam ut, mattis magna. Nulla vulputate nisi sit amet ligula tincidunt, at suscipit augue vulputate. 
+            </p>
+
+            <h3>Gênero: <span class="genero"></span></h3>
+            <h3>Autor: <span class="autor"></span></h3>
+            <h3>Número de páginas: <span class="paginas"></span></h3>
+
+            <img src="../img/loader.gif" class="checkbox-loader" alt="loading wheel">
+
+            <div class="checkbox-container" style="display: none;">
+                <input id="lido" type="checkbox" class="livro-checkbox">
+                <label for="lido">MARCAR COMO LIDO</label>
+            </div>
+        </div>
+    </main>
+    <script src="../main.bundle.js"></script>
+    <script src="../livro.bundle.js"></script>
+</body>
+</html>

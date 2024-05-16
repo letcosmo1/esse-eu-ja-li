@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+.main-box {
+    display: flex;
+}
+h2 {
+    margin-right: 40px;
+    font-size: 48px;
+    font-weight: 500;
+}
+.signin-form {
+    height: 203px;
+}
+.signin-form input {
+    width: calc(270px - 32px);
+    margin-bottom: 24px;
+}
+.signin-form button {
+    width: 274px;
+    height: 44px;
+}
+.login-err {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--red);
+}

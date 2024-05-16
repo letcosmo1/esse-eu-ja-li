@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+.main-container {
+    width: 600px;
+    margin-bottom: 48px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.pontos-container {
+    display: flex;
+    justify-content: space-between;
+}
+.pontos-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--gray);
+    border-radius: 5px;
+
+}
+.pontos-container p {
+    font-size: 56px;
+    color: var(--white);
+}
+hr {
+    margin: 24px 0;
+    border: 1px solid var(--black);
+}
+.trofeus-container h2 {
+    margin-bottom: 24px;
+}
+.trofeus-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trofeus-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 294px;
+    height: 56px;
+    margin-bottom: 12px;
+    background-color: var(--gray);
+    color: var(--white);
+    border-radius: 5px;
+}

@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-form {
+    display: flex;
+    margin-top: 40px;
+}
+.search-form input {
+    width: calc(300px - 32px);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.search-form input {
+    width: calc(300px - 32px);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.search-form button {
+    width: calc(50px - 4px);
+    height: calc(50px - 4px);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.livros-list {
+    margin-top: 40px;
+}
+.livros-list li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lighter-gray);
+    width: calc(680px - 32px);
+    height: 52px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+.livros-list li:hover {
+    background-color: var(--light-gray);
+}
+.livro-titulo {
+    width: 400px;
+}
+.livro-autor {
+    width: 200px;
+}
+.livro-ano {
+    width: 50px;
+}
