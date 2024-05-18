@@ -29,7 +29,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/pages/login.html',
             filename: 'login.html',
-            chunks: ['login']
+            chunks: ['main', 'login']
         }),
         new HtmlWebpackPlugin({
             template: './src/pages/pontuacao.html',
@@ -46,15 +46,15 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/,
+                use: ['html-loader'],
+            },
+            {
                 test: /\.css$/,
                 use: [
                     'style-loader', 'css-loader'
                 ]
             },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            }
         ] 
     }
 }
