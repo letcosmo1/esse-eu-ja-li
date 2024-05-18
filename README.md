@@ -13,7 +13,7 @@ E-mail: admin@gmail.com
 
 Senha: admin123
 
-Site para preview: - https://dom-cheff.vercel.app/
+Site para preview: - https://esse-eu-ja-li.vercel.app/login.html
 
 
 ## Tecnologias usadas
