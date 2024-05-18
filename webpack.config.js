@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -14,6 +15,33 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/pages/index.html',
+            filename: 'index.html',
+            chunks: ['main', 'index']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/livro.html',
+            filename: 'livro.html',
+            chunks: ['main', 'livro']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/login.html',
+            filename: 'login.html',
+            chunks: ['login']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/pontuacao.html',
+            filename: 'pontuacao.html',
+            chunks: ['main', 'pontuacao']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/ranking.html',
+            filename: 'ranking.html',
+            chunks: ['main', 'ranking']
+        })
+    ],
     watch: true,
     module: {
         rules: [

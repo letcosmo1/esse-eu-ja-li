@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e980253398.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/ranking.css">
-    <title>Top 10</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -20,25 +20,13 @@
             <button class="logout-button">Logout</button>
         </nav>
     </header>
-
-    <a href="index.html" class="go-back"><i class="fa-solid fa-arrow-left"></i></a>
-
     <main>
-        <img src="../img/loader.gif" class="loader" alt="loading wheel">
-        <div class="main-container" style="display: none;">
-            <h2>Top 10</h2>
-            <hr>
-            <div class="header">
-                <span class="header-posicao">P</span>
-                <span class="header-nome">NOME</span>
-                <span class="header-pontos">PONTOS</span>
-            </div>
-            <ul class="usuarios-list">
-
-            </ul>
-        </div>
+        <form class="search-form">
+            <input type="text" name="livro" placeholder="Nome do livro">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <img src="../img/loader.gif" class="loader" alt="loading wheel" style="display: none;">
+        <ul class="livros-list"></ul>
     </main>
-    <script src="../main.bundle.js"></script>
-    <script src="../ranking.bundle.js"></script>
 </body>
 </html>
