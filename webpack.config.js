@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         main: './src/js/main.js',
         login: './src/js/login.js',
-        home: './src/js/home.js',
+        index: './src/js/index.js',
         livro: './src/js/livro.js',
         pontuacao: './src/js/pontuacao.js',
         ranking: './src/js/ranking.js',

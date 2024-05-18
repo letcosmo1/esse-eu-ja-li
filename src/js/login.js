@@ -14,7 +14,7 @@ sigin_form.addEventListener('submit', (e) => {
         .then(cred => {
             console.log(cred)
             login_err.style.display = 'none'
-            window.location.href = 'home.html'
+            window.location.href = 'index.html'
         })
         .catch(() => {
             login_err.style.display = 'block'
