@@ -1,4 +1,4 @@
-import '../css/ranking.css'
+import '../css/index.css'
 import { db } from './firebase-config';
 import { collection, getDocs, limit, orderBy, query, where } from 'firebase/firestore'
 

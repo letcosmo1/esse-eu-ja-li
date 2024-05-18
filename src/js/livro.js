@@ -1,4 +1,4 @@
-import '../css/livro.css'
+import '../css/index.css'
 import { db, auth } from './firebase-config'
 import { collection, doc, getDoc, getDocs, query, updateDoc, where } from 'firebase/firestore'
 

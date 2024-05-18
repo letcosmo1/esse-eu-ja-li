@@ -1,4 +1,4 @@
-import '../css/pontuacao.css'
+import '../css/index.css'
 import { db, auth } from './firebase-config';
 import { collection, getDocs, query, where } from 'firebase/firestore'
 
