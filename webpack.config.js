@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         main: './src/js/main.js',
         login: './src/js/login.js',
@@ -12,7 +12,8 @@ module.exports = {
         ranking: './src/js/ranking.js',
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+//        path: path.resolve(__dirname, 'dist'),
+        path: 'dist',
         filename: '[name].bundle.js'
     },
     plugins: [
