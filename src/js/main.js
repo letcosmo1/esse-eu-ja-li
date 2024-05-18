@@ -1,3 +1,4 @@
+import '../css/main.css'
 import { auth } from './firebase-config';
 import { signOut } from 'firebase/auth'
 

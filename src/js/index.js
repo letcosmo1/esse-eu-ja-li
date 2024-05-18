@@ -1,3 +1,4 @@
+import '../css/index.css'
 import { db } from './firebase-config'
 import { getDocs, query, collection, orderBy, startAt, endAt } from 'firebase/firestore'
 
