@@ -12,8 +12,7 @@ module.exports = {
         ranking: './src/js/ranking.js',
     },
     output: {
-//        path: path.resolve(__dirname, 'dist'),
-        path: 'dist',
+        path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
     plugins: [
